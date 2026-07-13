@@ -25,6 +25,16 @@ const Home = () => {
           <li key={index}>{student.email}</li>
         ))}
       </ul>
+      <StudentCard students={students}/>
+    </div>
+  );
+};
+
+const StudentCard = ({students}:{students:{email:string}[]}) => {
+  return (
+    <div>
+      <h1> Total students: {students.length}</h1>
+
     </div>
   );
 };
